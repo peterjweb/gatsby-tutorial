@@ -2,7 +2,7 @@
 import * as React from 'react'
 // import { Link, link } from 'gatsby'
 import Layout from '../components/layout'
-
+import { StaticImage } from 'gatsby-plugin-image'
 // Step 2: Define your component (using hard coded link)
 // const IndexPage = () => {
 //   return (
@@ -19,7 +19,11 @@ import Layout from '../components/layout'
 const IndexPage = () => {
  return (
   <Layout pageTitle="Home Page">
-    <p>I'm making this by following the Gatsby Tutorial</p>
+    <p>I'm making this by following the Gatsby Tutorial.</p>
+    <StaticImage
+      alt="Photo of a doggy" 
+      src="../images/doggy.jpg"
+    />
   </Layout>
  )
 }
