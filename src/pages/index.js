@@ -3,6 +3,7 @@ import * as React from 'react'
 // import { Link, link } from 'gatsby'
 import Layout from '../components/layout'
 import { StaticImage } from 'gatsby-plugin-image'
+import Seo from '../components/seo'
 // Step 2: Define your component (using hard coded link)
 // const IndexPage = () => {
 //   return (
@@ -21,7 +22,7 @@ const IndexPage = () => {
   <Layout pageTitle="Home Page">
     <p>I'm making this by following the Gatsby Tutorial.</p>
     <StaticImage
-      alt="Photo of a doggy" 
+      alt="Photo of a puppy" 
       src="../images/doggy.jpg"
     />
   </Layout>
@@ -29,7 +30,7 @@ const IndexPage = () => {
 }
 
 // You'll learn about this in the next task, just copy it for now
-export const Head = () => <title>Home Page</title>
+export const Head = () => <Seo title="Home Page" />
 
 // Step 3: Export your component
 export default IndexPage
